@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     <!-- title -->
-    <title>Shaadi Milan</title>
+    <title><?= $title ?></title>
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="<?= base_url()?>assets/img/logo/favicon.png">

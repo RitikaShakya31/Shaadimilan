@@ -1,6 +1,5 @@
 <?php include('includes/header.php')?>
     <main class="main">
-
         <!-- hero slider -->
         <div class="hero-section">
             <div class="hero-slider owl-carousel owl-theme">
@@ -1045,11 +1044,7 @@
             </div>
         </div>
         <!-- instagram-area end -->
-
-
     </main>
-
-
     <?php include('includes/footer.php')?>
     <?php include('includes/footer-link.php')?>
   
