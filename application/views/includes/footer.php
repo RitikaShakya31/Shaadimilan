@@ -38,10 +38,10 @@
                         <div class="footer-widget-box list">
                             <h4 class="footer-widget-title">Social Media</h4>
                             <ul class="footer-social">
-                            <li><a href="<?= base_url() ?>"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="<?= base_url() ?>"><i class="fab fa-x-twitter"></i></a></li>
-                            <li><a href="<?= base_url() ?>"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="<?= base_url() ?>"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="<?= $contact[0]['facebook'] ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="<?= $contact[0]['twitter'] ?>"><i class="fab fa-x-twitter"></i></a></li>
+                            <li><a href="<?= $contact[0]['linkedin'] ?>"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="<?= $contact[0]['youtube'] ?>"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                         </div>
                     </div>

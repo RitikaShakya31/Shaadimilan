@@ -1,12 +1,11 @@
 <body>
-<div class="preloader">
-    <div class="loader">
-        <div class="loader-shadow"></div>
-        <div class="loader-box"></div>
-        <img src="<?= base_url() ?>assets/img/images/favicon.png" alt="Shadi Milan" class="loader-image">
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-shadow"></div>
+            <div class="loader-box"></div>
+            <img src="<?= base_url() ?>assets/img/images/favicon.png" alt="Shadi Milan" class="loader-image">
+        </div>
     </div>
-</div>
-
     <header class="header">
         <div class="header-top">
             <div class="container">
@@ -14,15 +13,15 @@
                     <div class="header-top-left">
                         <div class="header-top-contact">
                             <ul>
-                                <li>
+                                <li> 
                                     <div class="header-top-contact-info">
-                                        <a href="<?= base_url()?>"><i class="far fa-map-marker-alt"></i>Bhopal</a>
+                                        <a href="<?= base_url() ?>"><i class="far fa-map-marker-alt"></i><?= $contact[0]['address']?></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="header-top-contact-info">
                                         <a href=""><i class="far fa-envelope"></i>
-                                            <span class="__cf_email__">@infoshadimilan.com</span></a>
+                                            <span class="__cf_email__"><?= $contact[0]['email']?></span></a>
                                     </div>
                                 </li>
                             </ul>
@@ -30,10 +29,10 @@
                     </div>
                     <div class="header-top-right">
                         <div class="header-top-social">
-                            <a href="<?= base_url()?>"><i class="fab fa-facebook-f"></i></a>
-                            <a href="<?= base_url()?>"><i class="fab fa-x-twitter"></i></a>
-                            <a href="<?= base_url()?>"><i class="fab fa-instagram"></i></a>
-                            <a href="<?= base_url()?>"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="<?= $contact[0]['facebook'] ?>"><i class="fab fa-facebook-f"></i></a>
+                            <a href="<?= $contact[0]['twitter'] ?>"><i class="fab fa-x-twitter"></i></a>
+                            <a href="<?= $contact[0]['instagram'] ?>"><i class="fab fa-instagram"></i></a>
+                            <a href="<?= $contact[0]['linkedin'] ?>"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -42,8 +41,8 @@
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="<?= base_url()?>">
-                        <img src="<?= base_url()?>assets/img/images/Shadi.png" alt="Shadi Milan">
+                    <a class="navbar-brand" href="<?= base_url() ?>">
+                        <img src="<?= base_url() ?>assets/img/images/Shadi.png" alt="Shadi Milan">
                     </a>
                     <div class="mobile-menu-right">
                         <!-- <div class="mobile-menu-list">
@@ -57,15 +56,19 @@
                     <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url()?>">Home</a>
+                                <a class="nav-link active" href="<?= base_url() ?>">Home</a>
                             </li>
                             <li class="nav-item dropdown fonts-Raleway">
                                 <a class="nav-link" href="#" data-bs-toggle="dropdown">Search</a>
                                 <ul class="dropdown-menu fade-down">
-                                    <li><a class="dropdown-item" href="<?= base_url()?>quick_search">Quick Search</a></li>
-                                    <li><a class="dropdown-item" href="<?= base_url()?>advance_search">Advance Search</a></li>
-                                    <li><a class="dropdown-item" href="<?= base_url()?>keryword_search">Keyword Search</a></li>
-                                    <li><a class="dropdown-item" href="<?= base_url()?>profile_search">Search by Id</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url() ?>quick_search">Quick Search</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="<?= base_url() ?>advance_search">Advance
+                                            Search</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url() ?>keryword_search">Keyword
+                                            Search</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url() ?>profile_search">Search by Id</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -78,13 +81,14 @@
                                 <a class="nav-link" href="<?= base_url() ?>login">Login</a>
                             </li>
                         </ul>
-                       
+
                     </div>
                     <div class="header-nav-right">
-                            <div class="header-btn">
-                                <a href="<?= base_url() ?>register" class="theme-btn">Register <i class="far fa-arrow-right"></i></a>
-                            </div>
+                        <div class="header-btn">
+                            <a href="<?= base_url() ?>register" class="theme-btn">Register <i
+                                    class="far fa-arrow-right"></i></a>
                         </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -99,5 +103,3 @@
             </div>
         </form>
     </div> -->
-
-

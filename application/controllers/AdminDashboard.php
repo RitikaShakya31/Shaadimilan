@@ -15,10 +15,6 @@ class AdminDashboard extends CI_Controller
     public function index()
     {
         $data['profile'] = $this->profile_data;
-        // $data['member'] = $this->CommonModal->getNumRows("membership_list", "is_delete = '0'");
-        // echo '<pre>';
-        // print_r($data['membership']);
-        // exit();
         $data['projectTitle'] = 'Rishtey Marriage';
         $data['menu_cat'] = 'Dashboard';
         $data['menu_subcat'] = 'Home';
@@ -39,7 +35,6 @@ class AdminDashboard extends CI_Controller
         }
         $this->load->view('admin/register_list', $data);
     }
-
     public function register_delete($id)
     {
         $this->CommonModal->getSingleRowById('register', 'id', $id);
@@ -57,7 +52,6 @@ class AdminDashboard extends CI_Controller
         if (count($_POST) > 0) {
             $post = $this->input->post();
             $post['img'] = docUpload($_FILES['image']);
-
             $insertData = $this->CommonModal->insertRow('feature_profile', $post);
             if ($insertData) {
                 $msg = '<div class="alert alert-success" role="alert">Social Media Added Successfully</div>';

@@ -8,19 +8,19 @@
             <div class="">
                 <a href="#" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="<?= base_url() ?>image/logo-other1.png" alt="logo">
+                        <img src="<?= base_url() ?>assets/img/images/Shadi.png" alt="logo">
                     </span>
                     <span class="logo-lg">
-                        <img src="<?= base_url() ?>image/logo-other1.png" alt="logo">
+                        <img src="<?= base_url() ?>assets/img/images/Shadi.png" alt="logo">
                     </span>
                 </a>
 
                 <a href="#" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="<?= base_url() ?>image/logo-other1.png" alt="" height="40">
+                        <img src="<?= base_url() ?>assets/img/images/Shadi.png" alt="" height="40">
                     </span>
                     <span class="logo-lg">
-                        <img src="<?= base_url() ?>image/logo-other1.png" alt="logo">
+                        <img src="<?= base_url() ?>assets/img/images/Shadi.png" alt="logo">
                     </span>
                 </a>
             </div>

@@ -26,13 +26,13 @@
                     <tr>
                         <td width="35%" align="left">
                             <div align="left" style=" float:left;">
-                                <img src='https://rishteymarriage.com/uploads/06011736163651590.png' width=142 height=188 />
+                                <img src='https://shadimilan/uploads/06011736163651590.png' wishdth=142 height=188 />
                             </div>
                             <div align="left" style="float:left; margin-left:30px;">
                                 <p style="font-size:14px; margin:0px;"> Name :
                                     <b>Iqra Khans</b>
                                 </p>
-                                <p style="font-size:14px; margin:3px;"> Rishtey Id :
+                                <p style="font-size:14px; margin:3px;"> Shadi Milan Id :
                                     <b>R17971</b>
                                 </p>
                                 <p style='margin:3px; '>NRI
@@ -512,9 +512,9 @@
             <td colspan="5" bgcolor="#CCCCCC">
                 <p style="font-size:10px;"> <strong
                         style="font-weight:bolder;font-size:12px">Important:</strong>
-                    www.rishteymarriage.com
+                    www.shadimilan
                     Centre has taken reasonable care to ensure authenticity of this Bio-data. However, in
-                    some cases, it is not possible to verify confides of members. www.rishteymarriage.com
+                    some cases, it is not possible to verify confides of members. www.shadimilan
                     Centre can not be held responsible for the Bio-data contents, or for any loss or damage
                     incurred as a result of individuals displaying their Bio-data in this database. We
                     recommend that Members make neccessary enquiries befor taking forward with other

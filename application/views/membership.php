@@ -16,32 +16,37 @@
                 <div class="col-lg-7 mx-auto text-center mb-md-5">
                     <h2 class="site-title font-play pb-md-2">Get Started
                         Pick your Plan Now</span></h2>
-                    <span class="site-title-tagline font-Gotham-book membership-page">whether it's free or premium, we offer flexible options with unique <br> features to help you connect and grow.</span>
+                    <span class="site-title-tagline font-Gotham-book membership-page">whether it's free or premium, we
+                        offer flexible options with unique <br> features to help you connect and grow.</span>
                     <div class="header-img-divider">
-                    <img src="<?= base_url() ?>assets/img/images/shape.png" alt="shadi Milan">
+                        <img src="<?= base_url() ?>assets/img/images/shape.png" alt="shadi Milan">
                     </div>
                 </div>
             </div>
             <div class="row g-5">
-                <div class="col-md-6 col-lg-4">
-                    <div class="pricing-item text-center">
-                        <div class="pricing-header">
-                            <h4 class="text-start">SHAADI MILAN MINI</h4>
-                            <h1 class="pricing-amount">2000</h1>
-                            <p class="text-start">3 months</p>
-                        </div>
-                        <div class="pricing-feature text-justify">
-                            <p>
-                                This package provides basic matchmaking services for a duration of 3 months, helping you begin your journey towards finding the perfect match.
-                            </p>
-                            <div class="d-flex mt-md-1 mt-3">
-                            <a href="<?= base_url() ?>pay_now" class="theme-btn mt-md-3">Pay Now</a>
+                <?php
+                $i = 1;
+                if ($membership) {
+                    foreach ($membership as $row) {
+                        ?>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="pricing-item text-center">
+                                <div class="pricing-header">
+                                    <h4 class="text-start"><?= $row['heading']?></h4>
+                                    <h1 class="pricing-amount"><?= $row['amt']?></h1>
+                                    <p class="text-start"><?= $row['duration']?></p>
+                                </div>
+                                <div class="pricing-feature text-justify">
+                                    <p><?= $row['discription']?></p>
+                                    <div class="d-flex mt-md-1 mt-3">
+                                        <a href="<?= base_url() ?>pay_now" class="theme-btn mt-md-3">Pay Now</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
+                    <?php }
+                } ?>
+                <!-- <div class="col-md-6 col-lg-4">
                     <div class="pricing-item text-center">
                         <div class="pricing-header">
                             <h4 class="text-start">SHAADI MILAN SILVER</h4>
@@ -58,8 +63,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="col-md-6 col-lg-4">
                     <div class="pricing-item text-center">
                         <div class="pricing-header">
@@ -77,7 +80,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4">
                     <div class="pricing-item text-center">
                         <div class="pricing-header">
@@ -95,7 +97,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4">
                     <div class="pricing-item text-center">
                         <div class="pricing-header">
@@ -113,7 +114,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4">
                     <div class="pricing-item text-center">
                         <div class="pricing-header">
@@ -130,8 +130,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div> -->
             </div>
         </div>
     </div>

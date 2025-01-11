@@ -4759,6 +4759,7 @@ shop css
 }
 
 .shop-cart tr td {
+  font-family: 'Lato';
   color: #080404;
   vertical-align: middle;
   border-bottom: 1px solid #ad0345;

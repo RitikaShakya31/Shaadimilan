@@ -44,11 +44,32 @@ function returnId($table, $data)
 	return $ci->db->insert_id();
 }
 
+function docUpload($file)
+{
+	if (isset($file)) {
+		$file_name = date('dm') . round(microtime(true) * 1000) . '-' . $file['name'];
+		$file_size = $file['size'];
+		$file_tmp = $file['tmp_name'];
+		$file_type = $file['type'];
+		$tmp = explode('.', $file['name']);
+		// $file_extension = end($tmp);
+		$file_ext = strtolower(end($tmp));
+		$extensions = array("jpeg", "jpg", "png", "pdf");
+		move_uploaded_file($file_tmp, "uploads/" . $file_name);
+		return $file_name;
+	}
+}
 function randomCode($length_of_string)
 {
 	$str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 	return substr(str_shuffle($str_result), 0, $length_of_string);
 }
+function flashMultiData($vardata)
+{
+	$ci = &get_instance();
+	return $ci->session->set_flashdata($vardata);
+}
+
 
 function getRowById($table, $column, $id)
 {
@@ -481,36 +502,7 @@ function sendNotificationUser($device_id, $title, $message)
 	return $results;
 }
 
-function sendEmail($host, $username, $password, $fromName, $sendToEmail, $subject, $mail_body)
-{
 
-	// base_url = "http://bmcpmaybooking.com/"; 
-	// host = 'mail.bmcpmaybooking.com'; 
-	// username = 'bookingverification@bmcpmaybooking.com';  
-	// password = "j(*0d%z@OKLR";
-	require '././php/class/class.phpmailer.php';
-	$base_url = base_url();
-	$mail = new PHPMailer;
-	$mail->IsSMTP();
-	$mail->Host = $host;
-	$mail->Port = '587';
-	$mail->SMTPAuth = true;
-	$mail->Username = $username;
-	$mail->Password = $password;
-	$mail->SMTPSecure = '';
-	$mail->From = $username;
-	$mail->FromName = $fromName;
-	$mail->AddAddress($sendToEmail);
-	$mail->WordWrap = 50;
-	$mail->IsHTML(true);
-	$mail->Subject = $subject;
-	$mail->Body = $mail_body;
-	if ($mail->Send()) {
-		return true;
-	} else {
-		return false;
-	}
-}
 
 function SMSSend($phone, $msg, $template, $debug = false)
 {

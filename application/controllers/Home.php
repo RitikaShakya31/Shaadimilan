@@ -1,10 +1,17 @@
 <?php
 class Home extends CI_Controller
-
 {
+    public function __construct()
+	{
+		parent::__construct();
+		date_default_timezone_set("Asia/Kolkata");
+		$this->contact = $this->CommonModal->getAllRows('contact');
+	}  
     public function index()
     {
+        $data['membership_latest'] = $this->CommonModal->getAllRowsWithLimit('membership', '3', 'id', 'DESC');
         $data['title'] = 'Home | Shaadi Milan Mitromony';
+        $data['contact'] = $this->contact;
         $this->load->view('includes/header-link' , $data);
         $this->load->view('home');
     }
@@ -39,6 +46,7 @@ class Home extends CI_Controller
 
     public function membership()
     {
+        $data['membership'] = $this->CommonModal->getAllRowsInOrder('membership', 'id', 'ASC');
         $data['title'] = 'Membership | Shaadi Milan Mitromony';
         $this->load->view('includes/header-link' , $data);
         $this->load->view('membership');

@@ -1,8 +1,6 @@
 <?php include('includes/header.php'); ?>
 
 <body data-sidebar="dark">
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
-    <!-- Begin page -->
     <div id="layout-wrapper">
         <?php include('includes/top-header.php'); ?>
         <?php include('includes/menu.php'); ?>
@@ -15,7 +13,6 @@
                     <?php include('includes/pagetitle.php'); ?>
                     <div class="row">
                     <h5>Add Membership plans</h5>
-
                         <div class="col-xl-12">
                             <div class="card">
                                 <div class="card-body" >
